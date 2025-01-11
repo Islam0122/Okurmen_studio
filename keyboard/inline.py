@@ -87,4 +87,4 @@ def generate_faq_keyboard():
     for index, item in enumerate(FAQ):
         builder.button(text=item["question"], callback_data=f"faq_{index}")
     builder.button(text="⬅️ Назад", callback_data="return")
-    return builder.as_markup()
+    return builder.adjust(1, ).as_markup()
