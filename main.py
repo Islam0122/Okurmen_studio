@@ -16,7 +16,7 @@ from aiogram.client.session.aiohttp import AiohttpSession
 
 load_dotenv(find_dotenv())
 
-bot = Bot(token=os.getenv('TOKEN'), parse_mode=ParseMode.HTML)
+bot = Bot(token=os.getenv('TOKEN'))
 bot.my_admins_list = [5627082052,]
 bot.group_id = os.getenv('group_id')
 dp = Dispatcher()
